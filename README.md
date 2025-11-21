@@ -1,20 +1,18 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# QuizGen AI
 
-# Run and deploy your AI Studio app
+This project contains two versions of the Quiz Application:
+1. **React Web App** (Runs in the browser preview automatically)
+2. **Python Streamlit App** (Runs in a terminal)
 
-This contains everything you need to run your app locally.
+## How to run the React App
+If you are in a web container (like Project IDX, StackBlitz, etc.), the React app should be running automatically in the preview window. 
 
-View your app in AI Studio: https://ai.studio/apps/drive/1Luk9nNiho1BKxGsfRqziIYQiUZ7sf0gZ
+## How to run the Python Streamlit App
+If you want to run the Python version, open a terminal and run:
 
-## Run Locally
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Then open the URL provided in the terminal (usually http://localhost:8501).
